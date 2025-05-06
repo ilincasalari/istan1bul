@@ -1,0 +1,169 @@
+body {
+  background-color: antiquewhite;
+}
+
+h2 {
+  text-align: center;
+ 
+    font-size: 45px;
+}
+
+.card {
+  display: flex;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  font-family: sans-serif;
+  background-color: rgb(253, 245, 235);
+}
+
+.card img {
+  width: 190px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+}
+
+.container {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  margin-left: 10px;
+  gap: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+a {
+  display: inline;
+  padding: 10px 20px;
+  margin: 10px;
+  color: #0D0D0D;
+  background-color: #d2b48c;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  position: relative;
+  bottom: 5px;
+  left: 460px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgb(253, 193, 161);
+}
+.c{
+    text-align: center;
+   }
+form {
+  background-color: #fdf6e3;
+  width: 25%;
+  margin-left: auto;
+  margin-right: 30px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: -600px;
+}
+
+h1 {
+  color: #5e503f;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  color: #5e503f;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #d2b48c;
+  background-color: #fffaf0;
+  color: #333;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: #d2b48c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c2a47c;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin: 15px 0;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-content ol {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  form {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  input,
+  select {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  button {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    left: 0;
+    margin: 10px auto;
+  }
+}
